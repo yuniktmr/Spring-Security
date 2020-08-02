@@ -22,7 +22,7 @@ public class CustomUserDetailService implements UserDetailsService{
 		
 		if(username.equals("admin")) {
 			roles = Arrays.asList(new SimpleGrantedAuthority("ROLE_ADMIN"));
-			return new User("admin","$2y$12$YP.QrhN5AzccvaJgzoNr4.gPOh7PT.DAsVlBi4CDCTv6fZKo.p0JO",roles);
+			return new User("admin","$2y$12$vA9YE6qqjHkxk9YomZsL0.UHF5.uvJw5Nirn0XphZIe5PUOFG1XSi",roles);
 		}
 		if(username.equals("user")) {
 			roles = Arrays.asList(new SimpleGrantedAuthority("ROLE_USER"));
